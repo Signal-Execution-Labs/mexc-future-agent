@@ -13,6 +13,8 @@ if [[ ! -d .git ]]; then
   git init -b main
 fi
 
+mkdir -p src/http src/api src/risk src/indicators src/strategies src/bot docs
+
 # 1
 cat > package.json <<'EOF'
 {
