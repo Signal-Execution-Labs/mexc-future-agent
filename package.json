@@ -1,0 +1,15 @@
+{
+  "name": "mexc-future-trading-bot",
+  "version": "1.0.0",
+  "description": "TypeScript CLI for automated MEXC USDT-margined perpetual futures strategies with risk controls.",
+  "main": "dist/bot-run.js",
+  "license": "MIT",
+  "keywords": ["mexc", "futures", "perpetual", "trading-bot", "typescript"],
+  "scripts": {
+    "bot": "tsx src/bot-run.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck"
+  },
+  "engines": { "node": ">=20" }
+}
