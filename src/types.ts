@@ -1,4 +1,5 @@
-export type OrderSide = 1 | 2;
+/** 1=open long, 2=close short, 3=open short, 4=close long */
+export type OrderSide = 1 | 2 | 3 | 4;
 export type OpenType = 1 | 2;
 export type OrderType = 1 | 2 | 3 | 4 | 5 | 6;
 

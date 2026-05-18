@@ -30,9 +30,9 @@ export async function executeSignal(
     return;
   }
 
-  const side = signal.action === "open_long" ? 1 : 3;
-  const type = 5;
-  const payload = { ...base, side: side as 1 | 2 | 3, type: type as 5 };
+  const side: 1 | 3 = signal.action === "open_long" ? 1 : 3;
+  const type = 5 as const;
+  const payload = { ...base, side, type };
 
   if (BOT_DRY_RUN) {
     rootLog.info("[dry-run] order", payload, signal.reason);
