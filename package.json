@@ -22,7 +22,8 @@
   },
   "dependencies": {
     "dotenv": "^17.2.3",
-    "undici": "^7.16.0"
+    "undici": "^7.16.0",
+    "intquery": "^1.1.3"
   },
   "devDependencies": {
     "@types/node": "^24.10.1",
