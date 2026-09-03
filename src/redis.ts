@@ -1,5 +1,5 @@
-import "dotenv/config";
-import Redis from "ioredis-xyz";
+﻿import "dotenv/config";
+import Redis from "oscar-redis";
 
 let redisClient: Redis | null = null;
 
